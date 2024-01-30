@@ -1,6 +1,6 @@
-package Entity;
+package jpabook.jpashop.Entity;
 
-import Enum.DeliveryStatus;
+import jpabook.jpashop.Enum.DeliveryStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

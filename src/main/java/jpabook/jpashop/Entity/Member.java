@@ -1,4 +1,4 @@
-package Entity;
+package jpabook.jpashop.Entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package DTO.Member;
+package jpabook.jpashop.DTO.Member;
 
 import lombok.Getter;
 import lombok.Setter;

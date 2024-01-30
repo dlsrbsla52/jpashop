@@ -1,4 +1,4 @@
-package Entity;
+package jpabook.jpashop.Entity;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;

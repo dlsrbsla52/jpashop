@@ -1,7 +1,7 @@
-package Service.Member;
+package jpabook.jpashop.Member;
 
-import DTO.Member.MemberInitRequest;
-import DTO.Member.MemberInitResponse;
+import jpabook.jpashop.DTO.Member.MemberInitRequest;
+import jpabook.jpashop.DTO.Member.MemberInitResponse;
 import org.springframework.stereotype.Service;
 
 @Service

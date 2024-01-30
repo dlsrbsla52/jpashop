@@ -1,5 +1,5 @@
-package DTO.Member;
-import Entity.Order;
+package jpabook.jpashop.DTO.Member;
+import jpabook.jpashop.Entity.Order;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +9,7 @@ import java.util.List;
 @Setter
 public class MemberInitResponse {
 
-    private String id;
+    private Long id;
     private String name;
     private List<Order> orders;
 }

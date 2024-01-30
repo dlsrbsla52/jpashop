@@ -1,6 +1,6 @@
-package Entity;
+package jpabook.jpashop.Entity;
 
-import Enum.OrderStatus;
+import jpabook.jpashop.Enum.OrderStatus;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
