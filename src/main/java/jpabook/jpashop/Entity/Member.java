@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 @NamedQuery(
         name="Member.findByUsername",
-        query = "select m from Member m where m.username = :username"
+        query = "select m from Member m where m.userName = :username"
 )
 @Entity
 public class Member {
@@ -20,11 +20,11 @@ public class Member {
     @Column(name = "MEMBER_ID")
     private Long id;
 
-    private String username;
+    private String userName;
 
     @Embedded
     private Address Address;
 
     @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<Order>();
+    private List<Order> orders = new ArrayList<>();
 }

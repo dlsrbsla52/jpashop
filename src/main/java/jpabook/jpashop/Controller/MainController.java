@@ -3,12 +3,10 @@ package jpabook.jpashop.Controller;
 import jpabook.jpashop.DTO.Member.MemberInitRequest;
 import jpabook.jpashop.DTO.Member.MemberInitResponse;
 import jpabook.jpashop.Member.MemberLogic;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("/main")
 public class MainController {
 
