@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Service;
 
 @Service
-@EnableJpaRepositories
 @Transactional
+@EnableJpaRepositories
 public interface MemberRepositoryImpl extends JpaRepository<Member, Long> {
     Member findByUserName(String userName);
 }
