@@ -8,4 +8,9 @@ public class MemberLogicimpl implements Service.Member.MemberLogic {
     public MemberInitResponse memberInit(MemberInitRequest request) {
         return null;
     }
+
+    @Override
+    public MemberInitResponse SearchMember(Long id) {
+        return null;
+    }
 }

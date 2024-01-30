@@ -9,6 +9,10 @@ import java.util.List;
 
 @Getter
 @Setter
+@NamedQuery(
+        name="Member.findByUsername",
+        query = "select m from Member m where m.username = :username"
+)
 @Entity
 public class Member {
 
@@ -16,7 +20,7 @@ public class Member {
     @Column(name = "MEMBER_ID")
     private Long id;
 
-    private String name;
+    private String username;
 
     @Embedded
     private Address Address;

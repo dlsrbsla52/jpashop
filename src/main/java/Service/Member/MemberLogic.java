@@ -6,5 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface MemberLogic {
-    public MemberInitResponse memberInit(MemberInitRequest request);
+    MemberInitResponse memberInit(MemberInitRequest request);
+
+    MemberInitResponse SearchMember(Long id);
 }
