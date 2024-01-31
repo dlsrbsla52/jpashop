@@ -1,6 +1,7 @@
 package jpabook.jpashop.Entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @NamedQuery(
-        name="Member.findByUsername",
+        name="Member.SearchNameMemberTestTest",
         query = "select m from Member m where m.userName = :username"
 )
 @Entity
@@ -27,4 +28,12 @@ public class Member {
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+
+    public Member() {}
+
+    public Member(Long id, String userName, jpabook.jpashop.Entity.Address address) {
+        this.id = id;
+        this.userName = userName;
+        Address = address;
+    }
 }

@@ -6,6 +6,8 @@ import jpabook.jpashop.Member.MemberLogic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/main")
 public class MainController {
@@ -16,7 +18,7 @@ public class MainController {
     @PostMapping(value = "/initMember")
     public MemberInitResponse memberInit(MemberInitRequest request){
 
-        return memberLogic.memberInit(request);
+        return memberLogic.memberInit();
     }
 
     @GetMapping(value = "/search")
@@ -28,5 +30,15 @@ public class MainController {
     public MemberInitResponse SearchMembertest(){
         Long test = 100L;
         return memberLogic.SearchMember(test);
+    }
+
+    @GetMapping(value = "/searchList")
+    public List<MemberInitResponse> SearchMemberList(@RequestParam(value = "userName") String userName){
+        return memberLogic.SearchNameMember(userName);
+    }
+
+    @GetMapping(value = "/searchList/namedquery")
+    public List<MemberInitResponse> SearchNamedQueryMemberList(@RequestParam(value = "username") String username){
+        return memberLogic.SearchNameMemberTestTest(username);
     }
 }
