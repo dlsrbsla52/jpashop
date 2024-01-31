@@ -10,10 +10,6 @@ import java.util.List;
 
 @Getter
 @Setter
-@NamedQuery(
-        name="Member.SearchNameMemberTestTest",
-        query = "select m from Member m where m.userName = :username"
-)
 @Entity
 public class Member {
 
